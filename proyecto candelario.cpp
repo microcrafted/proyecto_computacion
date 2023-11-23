@@ -106,7 +106,7 @@ int main() {
         	        	    				cout << "2. Bosque de africa" << endl;
         	    	       					cout << "3. No hacer nada" << endl;
         		            				cout << "4. Salir del juego" << endl;
-        		            				cin >> historia4;
+        		            				cin >> historia4; 
         		            					if (historia4 == 1) { // cuarto punto interactivo 
 													cout << "Al ir por rancho seco te encuentras con uan de esas almas perdidas la cual te mete a un lugar llamado SHINE en el cual te terminaron quitando 20 puntos de vida, tu vida actual es: " << vida - 20 << "% de vida." << endl; 
 													vida = vida - 20;
@@ -121,8 +121,30 @@ int main() {
 												}
 												if (historia4 == 4){
 													cout << "saliendo del juego Vuelve pronto!" << endl;
-													return 0;}
-        		            		
+													return 0;
+												}
+        		            						cout << "Alfin despues de todo logramos llegar a la fortaleza ahora tendremos que buscar en las distintas partes este elixir pero si te equivocas tendras que empezar de nuevo mucha suerte y ojala la encuentres" << endl;
+													cout << "tienes la direccion general Las torres y por ultimo el teatro pero cual de estas podras encontrar este elixir si llegas a quivocarte olvidaras como es que llegaste ahi MUCHA SUERTE AVENTURERO" << endl;
+													cout << "1. direccion" << endl;
+													cout << "2. torres" << endl;
+													cout << "3. teatro" << endl;
+													cin >> historia5;
+														if(historia5 == 1) { // quinta y tultimo punto interactivo 
+															cout << "Entras a la direccion y te encuentras una puerta misteriosa despues de toda tu aventura te das cuenta que es una farsa no habia ningun tesoro aqui solo fue una aventura sin sentido fue como el one piece : " << vida << "% de vida." << endl; 
+															vida = vida;
+														}
+                    									if (historia5 == 2){
+                   				 							cout << "Entras y no ves nada es un cuarto oscuro entonces te das cuenta que es una farsa no habia ningun tesoro aqui solo fue una aventura sin sentido fue como el one piece: " << vida -100 << "% de vida." << endl;
+                   				 							vida = vida - 100;
+														}
+                    									if (historia5 == 3){
+                    										cout << "Entras al teatro y no encuentras nada terminas aburriendote y regresando a tu hogar: " << vida << "% de vida." << endl;
+                    										vida = vida;
+														}
+														if (historia5 == 4){
+															cout << "saliendo del juego Vuelve pronto!" << endl;
+															return 0;
+														}
 			break;
             case 2:        // dar la información donde me podrían contactar
                 cout << "Nombre: Axel Rafael Ramos Benitez" << endl;
