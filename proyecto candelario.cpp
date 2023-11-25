@@ -5,11 +5,8 @@ using namespace std;
 int main() {
     int vida = 100; // Este será el recolectable
     int opcion;     // Se usará para interactuar con el menú principal
-    int historia;   // Se usará para moverte en la historia
-    int historia2;  // Segundo punto interactivo en la historia
-    int historia3;  // Tercer punto interactivo en la historia
-    int historia4;  // Cuarto punto interactivo en la historia
-    int historia5;  // Quinto y último punto de interacción dentro de esta historia
+    int historia, historia2, historia3, historia4, historia5;   // Se usará en los puntos de interaccion en la historia
+    
 
     do {
     	cout << "*************************************************************************************************************" << endl;
@@ -25,10 +22,12 @@ int main() {
         cout << "5. Salir del juego" << endl;
         cout << "Por favor, ingresa tu elección: " << endl;
         cin >> opcion;
-
+		
+			
+		
         switch (opcion) {   // Aquí pondremos el número de la opción a elegir :O
             case 1:
-
+				do{
 				
                 cout << "Tu historia empieza aquí. Eres un aventurero buscando el tan aclamado elixir de la vida en el antiguo reino de Nezahualcóyotl y estás en búsqueda del poderoso elixir de la vida, ya que con este se logrará tener la inmortalidad." << endl;
                 cout << "Actualmente, tu vida es: " << vida << "% y a continuación diremos las pruebas a seguir para conseguir el elixir." << endl;
@@ -38,6 +37,7 @@ int main() {
                 cout << "2. Sendero iluminado" << endl;
                 cout << "3. Cueva misteriosa" << endl;
                 cout << "4. Salir del juego" << endl;
+                cout << "Por favor, ingresa tu eleccion: ";
                 cin >> historia;
 
                 if (historia == 1) { // Primer punto interactivo 
@@ -56,13 +56,14 @@ int main() {
                     cout << "Saliendo del juego. ¡Vuelve pronto!" << endl;
                     return 0;
                 }
-
+			do{
                 cout << "Después de lograr sobrevivir por estos caminos te encuentras a un viejo mago el cual te advierte que para poder llegar al siguiente lugar llamado Ciudad Azteca tienes que usar una protección mágica la cual la adquirirás de una poción." << endl;
                 cout << "La primera poción era de un color HORRIBLE pero que olía bien. La segunda poción tiene un color llamativo pero huele agrio y la última no cuenta con ningún color ni tampoco olor. ¿Entonces cuál eliges?" << endl;
                 cout << "1. Color horrible" << endl;
                 cout << "2. La más llamativa" << endl;
                 cout << "3. La simple" << endl;
                 cout << "4. Salir del juego" << endl;
+                cout << "Por favor, ingresa tu eleccion: ";
                 cin >> historia2;
 
                 if (historia2 == 1) { // Segundo punto interactivo 
@@ -88,6 +89,7 @@ int main() {
                 cout << "2. Ir en combi" << endl;
                 cout << "3. Ir caminando" << endl;
                 cout << "4. Salir del juego" << endl;
+                cout << "Por favor, ingresa tu eleccion: ";
                 cin >> historia3;
 
                 if (historia3 == 1) { // Tercer punto interactivo 
@@ -116,6 +118,7 @@ int main() {
                 cout << "2. Bosque de África" << endl;
                 cout << "3. No hacer nada" << endl;
                 cout << "4. Salir del juego" << endl;
+                cout << "Por favor, ingresa tu eleccion: ";
                 cin >> historia4;
 
                 if (historia4 == 1) { // Cuarto punto interactivo 
@@ -140,6 +143,7 @@ int main() {
                 cout << "1. Dirección" << endl;
                 cout << "2. Torres" << endl;
                 cout << "3. Teatro" << endl;
+                cout << "Por favor, ingresa tu eleccion: ";
                 cin >> historia5;
 
                 if (historia5 == 1) { // Quinto y último punto interactivo 
@@ -158,11 +162,18 @@ int main() {
                     cout << "Saliendo del juego. ¡Vuelve pronto!" << endl;
                     return 0;
                 }
-                
-                cout << "fin de la historia si gustas puedes volver a jugar o interactuar con el menu" << endl;
-                break;
 
-            case 2:        // Dar la información donde me podrían contactar
+                cout << "fin de la historia si gustas puedes volver a jugar o interactuar con el menu" << endl;
+                cout<< "" << endl;
+            }while (historia < 4);   
+			
+				break;
+				
+            }while (historia <4);
+			cout << "ingresa una opcion valida" << endl; 
+        
+            
+			case 2:        // Dar la información donde me podrían contactar
                 cout << "Nombre: Axel Rafael Ramos Benitez" << endl;
                 cout << "Correo: 25.axel.rafael@gmail.com" << endl;
                 cout << "Instagram: @axel_rams" << endl;
