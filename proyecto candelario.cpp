@@ -12,6 +12,9 @@ int main() {
     int historia5;  // Quinto y último punto de interacción dentro de esta historia
 
     do {
+    	cout << "*************************************************************************************************************" << endl;
+    	cout << "** La busqueda del elixir infinito  " << endl;
+    	cout << "*************************************************************************************************************" << endl;
         cout << "Bienvenido a la historia interactiva. En esta, se te contará una historia con diferentes caminos a elegir." << endl;
         cout << "Espero que sea de tu agrado y te diviertas." << endl;
         cout << "Por favor, elige una opción con el número correspondiente." << endl;
@@ -25,6 +28,8 @@ int main() {
 
         switch (opcion) {   // Aquí pondremos el número de la opción a elegir :O
             case 1:
+
+				
                 cout << "Tu historia empieza aquí. Eres un aventurero buscando el tan aclamado elixir de la vida en el antiguo reino de Nezahualcóyotl y estás en búsqueda del poderoso elixir de la vida, ya que con este se logrará tener la inmortalidad." << endl;
                 cout << "Actualmente, tu vida es: " << vida << "% y a continuación diremos las pruebas a seguir para conseguir el elixir." << endl;
                 cout << "Según la leyenda hay 3 posibles formas de poder llegar a este increíble tesoro. La primera forma es cruzando el terrorífico bosque oscuro donde se encuentran arañas gigantes. La segunda forma de ir es por el sendero iluminado en donde se encuentra un humo tóxico el cual te quitará vida mientras lo pasas. La tercera y última forma es ir y explorar la cueva misteriosa, la cual no se encuentra con ningún registro de que alguien haya podido pasar por ella." << endl;
